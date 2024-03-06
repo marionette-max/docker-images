@@ -39,8 +39,3 @@ docker run --rm -it \
   --publish 80:80 \
   marionette-max/pgadmin4
 ```
-
-# Support
-
-- Maintained by: [Max Anurin](https://anurin.name/)
-- Where to get help: [Telegram](https://t.me/marionette-max)
