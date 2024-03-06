@@ -1,7 +1,7 @@
-[![Docker Image Version](https://img.shields.io/docker/v/theanurin/openldap?sort=date&label=Version)](https://hub.docker.com/r/theanurin/openldap/tags)
-[![Docker Image Size](https://img.shields.io/docker/image-size/theanurin/openldap?label=Image%20Size)](https://hub.docker.com/r/theanurin/openldap/tags)
-[![Docker Pulls](https://img.shields.io/docker/pulls/theanurin/openldap?label=Pulls)](https://hub.docker.com/r/theanurin/openldap)
-[![Docker Stars](https://img.shields.io/docker/stars/theanurin/openldap?label=Docker%20Stars)](https://hub.docker.com/r/theanurin/openldap)
+[![Docker Image Version](https://img.shields.io/docker/v/marionette-max/openldap?sort=date&label=Version)](https://hub.docker.com/r/marionette-max/openldap/tags)
+[![Docker Image Size](https://img.shields.io/docker/image-size/marionette-max/openldap?label=Image%20Size)](https://hub.docker.com/r/marionette-max/openldap/tags)
+[![Docker Pulls](https://img.shields.io/docker/pulls/marionette-max/openldap?label=Pulls)](https://hub.docker.com/r/marionette-max/openldap)
+[![Docker Stars](https://img.shields.io/docker/stars/marionette-max/openldap?label=Docker%20Stars)](https://hub.docker.com/r/marionette-max/openldap)
 
 # OpenLDAP (+ Let's Encrypt)
 
@@ -72,10 +72,10 @@
 docker run --rm --interactive --tty \
   --publish 389:389 \
   --env SLAPD_DEBUG_LEVEL=-1 \
-  theanurin/openldap
+  marionette-max/openldap
 ```
 
-See [Quick Start guide](https://github.com/theanurin/docker-images/blob/openldap/quick-start/README.md) for details.
+See [Quick Start guide](https://github.com/marionette-max/docker-images/blob/openldap/quick-start/README.md) for details.
 
 ### With ACME challenge HTTP_01
 
@@ -97,7 +97,7 @@ docker run --rm --interactive --tty \
   --publish 0.0.0.0:80:80 \
   --publish 127.0.0.1:389:389 \
   --publish 0.0.0.0:636:636 \
-  theanurin/openldap
+  marionette-max/openldap
 ```
 
 ### With ACME challenge TLS_ALPN_01
@@ -120,7 +120,7 @@ docker run --rm --interactive --tty \
   --publish 127.0.0.1:389:389 \
   --publish 0.0.0.0:443:443 \
   --publish 0.0.0.0:636:636 \
-  theanurin/openldap
+  marionette-max/openldap
 ```
 
 ### With ACME challenge DNS_01
@@ -149,7 +149,7 @@ docker run --rm --interactive --tty \
   --mount "type=bind,source=$PWD/openldap-db.local,target=/data/db" \
   --publish 127.0.0.1:389:389 \
   --publish 0.0.0.0:636:636 \
-  theanurin/openldap
+  marionette-max/openldap
 ```
 
 #### Custom solver `tools.adm.py`
@@ -178,11 +178,5 @@ docker run --rm --interactive --tty \
   --mount "type=bind,source=/path/to/admtools_token,target=/run/secrets/admtools_token" \
   --publish 127.0.0.1:389:389 \
   --publish 0.0.0.0:636:636 \
-  theanurin/openldap
+  marionette-max/openldap
 ```
-
-
-# Support
-
-* Maintained by: [Max Anurin](https://anurin.name/)
-* Where to get help: [Telegram](https://t.me/theanurin)
