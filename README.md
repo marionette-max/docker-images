@@ -1,6 +1,6 @@
 # Docker Images
 
-Set of my images https://hub.docker.com/u/theanurin
+Set of my images https://hub.docker.com/u/marionette-max
 
 ## Repository
 
@@ -29,7 +29,7 @@ This is workspace branch of Docker Images multi project repository based on [orp
 
 1. Clone the repository
     ```shell
-    git clone git@github.com:theanurin/docker-images.git
+    git clone git@github.com:marionette-max/docker-images.git
     ```
 1. Enter into cloned directory
     ```shell
@@ -62,21 +62,21 @@ git push origin "${NEW_BRANCH}":"${NEW_BRANCH}"
 ### Get list of Docker image tags
 
 ```shell
-skopeo --override-os linux inspect docker://docker.io/theanurin/mkdocs | jq -r '.RepoTags[]' | tee tags.local.txt
+skopeo --override-os linux inspect docker://docker.io/marionette-max/mkdocs | jq -r '.RepoTags[]' | tee tags.local.txt
 ```
 
 ### Copy Docker images (multi-arch)
 
 ```shell
-cat tags.local.txt | while read TAG; do echo $TAG; skopeo copy --all docker://docker.io/zxteamorg/jekyll:$TAG docker://docker.io/theanurin/jekyll:$TAG; done
+cat tags.local.txt | while read TAG; do echo $TAG; skopeo copy --all docker://docker.io/zxteamorg/jekyll:$TAG docker://docker.io/marionette-max/jekyll:$TAG; done
 
-cat tags.local.txt | while read TAG; do echo $TAG; skopeo copy --all docker://docker.io/zxteamorg/messenger-bridge:$TAG docker://docker.io/theanurin/messenger-bridge:$TAG; done
+cat tags.local.txt | while read TAG; do echo $TAG; skopeo copy --all docker://docker.io/zxteamorg/messenger-bridge:$TAG docker://docker.io/marionette-max/messenger-bridge:$TAG; done
 ```
 
 ### Diff not synced tags
 
 ```shell
 skopeo --override-os linux inspect docker://docker.io/zxteamorg/jekyll | jq -r '.RepoTags[]' > tags.local.1
-skopeo --override-os linux inspect docker://docker.io/theanurin/jekyll | jq -r '.RepoTags[]' > tags.local.2
+skopeo --override-os linux inspect docker://docker.io/marionette-max/jekyll | jq -r '.RepoTags[]' > tags.local.2
 diff --new-line-format="%L" --old-line-format="" --unchanged-line-format="" tags.local.2 tags.local.1 | tee tags.local.txt
 ```
