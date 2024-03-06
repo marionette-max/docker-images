@@ -23,3 +23,4 @@ docker tag zxteamorg/traefik-with-python:latest zxteamorg/traefik-with-python:${
 docker push zxteamorg/traefik-with-python:${VERSION} && \
 docker push zxteamorg/traefik-with-python:latest
 ```
+
