@@ -1,7 +1,7 @@
-[![Docker Image Version](https://img.shields.io/docker/v/theanurin/pgadmin4?sort=date&label=Version)](https://hub.docker.com/r/theanurin/pgadmin4/tags)
-[![Docker Image Size](https://img.shields.io/docker/image-size/theanurin/pgadmin4?label=Image%20Size)](https://hub.docker.com/r/theanurin/pgadmin4/tags)
-[![Docker Pulls](https://img.shields.io/docker/pulls/theanurin/pgadmin4?label=Pulls)](https://hub.docker.com/r/theanurin/pgadmin4)
-[![Docker Stars](https://img.shields.io/docker/stars/theanurin/pgadmin4?label=Docker%20Stars)](https://hub.docker.com/r/theanurin/pgadmin4)
+[![Docker Image Version](https://img.shields.io/docker/v/marionette-max/pgadmin4?sort=date&label=Version)](https://hub.docker.com/r/marionette-max/pgadmin4/tags)
+[![Docker Image Size](https://img.shields.io/docker/image-size/marionette-max/pgadmin4?label=Image%20Size)](https://hub.docker.com/r/marionette-max/pgadmin4/tags)
+[![Docker Pulls](https://img.shields.io/docker/pulls/marionette-max/pgadmin4?label=Pulls)](https://hub.docker.com/r/marionette-max/pgadmin4)
+[![Docker Stars](https://img.shields.io/docker/stars/marionette-max/pgadmin4?label=Docker%20Stars)](https://hub.docker.com/r/marionette-max/pgadmin4)
 
 # pgAdmin
 
@@ -37,10 +37,10 @@ docker run --rm -it \
   --env 'PGADMIN_DEFAULT_EMAIL=user@example.org' \
   --env 'PGADMIN_DEFAULT_PASSWORD=SuperSecret' \
   --publish 80:80 \
-  theanurin/pgadmin4
+  marionette-max/pgadmin4
 ```
 
 # Support
 
 - Maintained by: [Max Anurin](https://anurin.name/)
-- Where to get help: [Telegram](https://t.me/theanurin)
+- Where to get help: [Telegram](https://t.me/marionette-max)
