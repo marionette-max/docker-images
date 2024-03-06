@@ -1,7 +1,7 @@
-[![Docker Image Version](https://img.shields.io/docker/v/theanurin/portainer?sort=date&label=Version)](https://hub.docker.com/r/theanurin/portainer/tags)
-[![Docker Image Size](https://img.shields.io/docker/image-size/theanurin/portainer?label=Image%20Size)](https://hub.docker.com/r/theanurin/portainer/tags)
-[![Docker Pulls](https://img.shields.io/docker/pulls/theanurin/portainer?label=Pulls)](https://hub.docker.com/r/theanurin/portainer)
-[![Docker Stars](https://img.shields.io/docker/stars/theanurin/portainer?label=Docker%20Stars)](https://hub.docker.com/r/theanurin/portainer)
+[![Docker Image Version](https://img.shields.io/docker/v/marionette-max/portainer?sort=date&label=Version)](https://hub.docker.com/r/marionette-max/portainer/tags)
+[![Docker Image Size](https://img.shields.io/docker/image-size/marionette-max/portainer?label=Image%20Size)](https://hub.docker.com/r/marionette-max/portainer/tags)
+[![Docker Pulls](https://img.shields.io/docker/pulls/marionette-max/portainer?label=Pulls)](https://hub.docker.com/r/marionette-max/portainer)
+[![Docker Stars](https://img.shields.io/docker/stars/marionette-max/portainer?label=Docker%20Stars)](https://hub.docker.com/r/marionette-max/portainer)
 
 # Portainer
 
@@ -43,10 +43,6 @@ docker run --rm --interactive --tty \
   --publish 8000:8000 \
   --publish 9000:9000 \
   --volume /var/run/docker.sock:/var/run/docker.sock \
-  theanurin/portainer
+  marionette-max/portainer
 ```
 
-# Support
-
-* Maintained by: [Max Anurin](https://anurin.name/)
-* Where to get help: [Telegram](https://t.me/theanurin)
